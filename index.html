@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K2K Music Player</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a222c;
+      --text: #e8eef4;
+      --muted: #9aa8b5;
+      --accent: #3d9cf0;
+      --line: #2a3542;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -20%, #1e3a5f 0%, transparent 55%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.25rem 3rem;
+    }
+    .brand {
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin: 0 0 0.5rem;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0 0 2rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin: 0 0 0.85rem;
+      font-weight: 600;
+    }
+    .links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .links a {
+      display: block;
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      background: rgba(61, 156, 240, 0.08);
+      border: 1px solid rgba(61, 156, 240, 0.25);
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .links a:hover {
+      background: rgba(61, 156, 240, 0.16);
+      border-color: var(--accent);
+    }
+    .links span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+    .meta {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .meta a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="brand">K2K Music Player</h1>
+    <p class="tagline">무료 음악 검색·재생 앱 · 운영 K2k</p>
+
+    <section class="card">
+      <h2>정책 문서</h2>
+      <ul class="links">
+        <li>
+          <a href="privacy-policy.html">
+            개인정보처리방침
+            <span>Privacy Policy · Play Console용</span>
+          </a>
+        </li>
+        <li>
+          <a href="terms-of-service.html">
+            서비스 약관
+            <span>Terms of Service</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <p class="meta">
+      문의:
+      <a href="mailto:jesusingod@hanmail.net">jesusingod@hanmail.net</a>
+      · K2k
+    </p>
+  </main>
+</body>
+</html>
